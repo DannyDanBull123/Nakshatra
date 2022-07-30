@@ -1,0 +1,13 @@
+#importpyqrcode
+import pyqrcode
+import png 
+from pyqrcode import QRCode
+#string that stores the website
+s = "https://editor.p5js.org/shrikant130469/full/f9ryDl7S1"
+#generating the qrcode
+url = pyqrcode.create(s)
+#create svg file
+url.svg("my qr.svg", scale = 8)
+#create png file
+url.png("my qr.png", scale = 6)
+
